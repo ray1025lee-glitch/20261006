@@ -11,8 +11,7 @@ let isLoading = true;
 let errorMessage = "";      // 用來顯示錯誤訊息
 
 // 你的 Google 試算表 CSV 連結
-const sheetCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS2PuVttEbQSfrgiEG_A7GgFvVtsN9nG-RcG5p59AnpJla6C-ORQtN2MWpjbPYjVrYaQFMpRCH2T25D/pub?output=csv';
-  loadTable(sheetCSVUrl, 'csv', 'header', 
+const sheetCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS2PuVttEbQSfrgiEG_A7GgFvVtsN9nG-RcG5p59AnpJla6C-ORQtN2MWpjbPYjVrYaQFMpRCH2T25D/pub?output=csv';  loadTable(sheetCSVUrl, 'csv', 'header', 
     (table) => {
       allQuestions = table;
       isLoading = false;
